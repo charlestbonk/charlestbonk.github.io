@@ -46,7 +46,7 @@ ggplot(aes(x=x, y=y), data=dino)+geom_point(color='#007200')
 
 \begin{frame}[fragile]{and my CV...}
 Ima be 1000000\% honest with you... I am horrified of you seeing my CV because I super look up to you and I am terrified of you seeing what I've done and it not being good enough, but also I would rather you see it now then me loose points and then you later demand seeing my CV.\\
-So the Link: \href{https://github.com/charlestbonk/charlestbonk.github.io}{Charles' CV}
+So the Link: \href{https://charlestbonk.github.io/CV-Bonk/CV-Bonk.pdf}{Charles' CV}
 \end{frame}
 \end{document}
 

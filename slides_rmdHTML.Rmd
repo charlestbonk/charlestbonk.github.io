@@ -36,6 +36,6 @@ ggplot(aes(x=x, y=y), data=dino)+geom_point(color='#007200')
 
 ## And my CV
 
-And the [link](https://github.com/charlestbonk/charlestbonk.github.io) to her.
+And the [link](https://charlestbonk.github.io/CV-Bonk/CV-Bonk.pdf) to her.
 
 
