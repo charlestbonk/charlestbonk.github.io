@@ -1,0 +1,88 @@
+---
+name: Charles
+surname: Bonk
+position: "Graduate Student  ||   Univeristy of Nebraska - Lincoln"
+address: "5733 S 98th Plz 3B, Omaha, NE"
+phone: +1 402 440 2651
+email: "ctbonk0@protonmail.com"
+twitter: CharlieBonk
+github: charlestbonk
+linkedin: charles-bonk
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::moderncv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Masters in Statistics", "2022-24", "University of Nebraska - Lincoln", "Lincoln, Nebraska",
+  "Bachelor of Science - Mathematics", "2018-22", "University of Nebraska - Lincoln", "Lincoln, Nebraska"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Related Courses
+
+* Statistics
+  * Statistics and Applications
+  * Introduction to Statistics II
+  * Introduction to Mathematical Statistics I: Distribution Theory
+  * Introduction to Mathematical Statistics II: Statistical Inference
+* Mathematics
+  * Multivariate Calculus
+  * Linear Algebra
+  * Theory of Linear Transformations
+  * Math in the City (Applicative Mathematics)
+
+# Technical Skills
+
+* Coding in:
+  * R
+  * MATLAB
+  * LaTeX
+  * Python
+  * SQL
+  * SAS
+
+[//]: <> (Ouch. Template gotta flex on me on not having a Nobel.)
+# Relvant Experience
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Where, ~Desc,
+  2021, "Statistics Intern", "Lincoln Police Department - Lincoln, NE","Mange and analyse large sets of confidential police case data.",
+  2020, "Mathematics Department Teaching Assistant","University of Nebraska-Lincoln - Lincoln, NE", "Lead classes of over 20 students through reciation materials covering multivariate calculus."
+) %>% 
+  detailed_entries(
+    Type,
+    Year,
+    Where,
+    Desc
+  )
+```
+
+
+# Projects
+
+```{r}
+tribble(
+   ~Position, ~ProjectType, ~Desc, ~Year,
+  "University of Nebraska - Lincoln | MATH 435: Math in the City", "Capstone Project", "COVID-19 Vaccine and Variant Interactiosn: An Analysis of Interactions of COVID-19 Vaccines Between Different Variants Among Age Groups", "Dec. 2021",
+  "Lincoln Police Department | Statistics Internship", "Research Article", "Media and Police Officers: Media Depictions of Officers and Office Assumptions of Media Depictions", "Unpublished"
+)%>%
+  detailed_entries(
+    Position,
+    ProjectType,
+    Desc,
+    Year
+  )
+```
+
